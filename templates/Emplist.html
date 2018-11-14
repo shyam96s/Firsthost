@@ -1,0 +1,15 @@
+{% extends "home.html" %}
+{% block mycont %}
+<h1>Employess @ ICTA_calicut</h1>
+{% for a in myemp %}
+<ul class="list-group-item">
+    <li class="list-group-item active"><b>EmpID</b>{{a.EmpID}}</li>
+    <li class="list-group-item "><b>Name:</b>{{a.Name}}</li>
+    <li class="list-group-item "><b>Age:</b>{{a.Age}}</li>
+    <li class="list-group-item "><b>Profile:</b>{{a.Profile}}</li>
+    <li class="list-group-item "><b>Salary:</b>{{a.Salary}}</li>
+</ul>
+{% endfor %}
+{% endblock %}
+
+
